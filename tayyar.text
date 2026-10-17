@@ -1,0 +1,124 @@
+Salam, men şu gün size Leonid Kantorowiç atly matematik we ekonomist barada gürrüň bermek isleýärin.
+Kantorowiç 1912-nji ýylda doglan sowet alymy bolup, ol häzirki wagtda Linear Programming, ýagny lineýar optimizasiýa diýilýän uguryň esaslandyryjysy hasaplanýar.
+Ol bu işi bilen 1975-nji ýylda Ykdysadyýet boýunça Nobel baýragyny aldy.
+Emma bu teoriýa uniwersitet üçin däl, real problemadan başlapdyr.
+
+
+2-nji bölüm. Mesele nädip ýüze çykdy? (Problem A)
+
+1939-njy ýylda Kantorowiç Leningraddaky bir zawodda problema görýär.
+Zawodda:
+	•	birnäçe maşyn
+	•	birnäçe önüm bölegi
+	•	her maşyn her bölegi başga tizlikde öndürýär
+Inženerler şeýle pikir edýär:
+
+“Gelin, her maşyn hemme zady az-owlak etsin.”
+Emma netije gowy bolmaýar.
+Sebäbi:
+	•	100 sany 1-nji bölek
+	•	80 sany 2-nji bölek bolsa
+diňe 80 taýýar önüm bolýar.
+Şonda Kantorowiç şeýle sorag berýär:
+“Maşynlary nähili paýlamaly, şonda iň köp taýýar önüm alarys?”
+Bu sorag Problem A diýlip atlandyrylýar.
+
+
+3-nji bölüm. Kantorowiçiň pikiri (elle çözgüt)
+
+Kantorowiçiň esasy pikiri örän ýönekeý:
+Her maşyn diňe özüne iň peýdaly işi etmeli.
+Mysal üçin:
+	•	awtomat maşyn 2-nji bölegi örän çalt edýär → diňe şony etmeli
+	•	başga maşyn 1-nji bölegi gowy edýär → diňe şony etmeli
+Ol muny elle hasaplama, tablisa we deňlikler bilen çözüpdir.
+Netije:
+	•	öň: 77 taýýar önüm
+	•	soň: 86 taýýar önüm
+Hiç hili täze maşyn almadan.
+Diňe akylly paýlamak bilen.
+
+
+4-nji bölüm. Matematiki görnüşi (gysgaça)
+
+Kantorowiç muny matematika öwürýär:
+	•	hᵢₖ → i-nji maşynyň wagtynyň näçesi k-njy bölege gidýär
+	•	Z → taýýar önümleriň sany
+Maksat:
+Z-ni maksimum etmek
+
+Şertler:
+	1.	Her maşyn doly işlemeli
+	2.	Ähli bölekleriň sany deň bolmaly
+	3.	Wagt negatiw bolup bilmez
+Bu häzirki wagtda Linear Programming diýilýär.
+
+
+5-nji bölüm. Häzirki zaman çözgüdi (Python + PuLP)
+
+Biz şu gün şol bir meseläni Python bilen çözýäris.
+Men:
+	•	Kantorowiçiň formulalaryny aldym
+	•	Python-daky PuLP kitaphanasy bilen kod ýazdym
+	•	Solver (Simplex) ulanyp çözdim
+Kompýuter:
+	•	birnäçe millisekuntda
+	•	şol bir optimal netijä ýetdi
+Netije:
+	•	Kantorowiç: 86
+	•	Python: 86.67
+Tapawut näme üçin?
+
+Sebäbi:
+	•	Python real sanlar bilen işleýär
+	•	real dünýäde bolsa diňe bitewi önüm bolýar
+Şonuň üçin Kantorowiç dogry ýagdaýda 86-a çenli düşüripdir.
+
+
+6-njy bölüm. Grafik bilen düşündiriş (heatmap)
+Men çözgüdi diňe san bilen däl, grafik bilen hem görkezdim.
+
+Heatmap bize görkezýär:
+	•	haýsy maşyn näme edýär
+	•	maşynlaryň nähili specializasiýa edilendigini
+
+Biz aç-açan görýäris:
+	•	awtomat → diňe 2-nji bölek
+	•	beýleki maşynlar → özüne peýdaly bölek
+Bu Kantorowiçiň ideýasynyň gözüňe görünýän subuty.
+
+
+7-nji bölüm. Has real ýagdaý (Problem B)
+
+Hakyky durmuşda diňe wagt däl, başga çäklendirmeler hem bar:
+	•	energiýa
+	•	işçi
+	•	material
+Men şonuň üçin Problem B hem goşdum:
+	•	energiýa limiti goýdum
+	•	solver täze optimal çözgüt tapdy = 150kw 
+Bu görkezýär:
+Kantorowiçiň ideýasy diňe teoriýa däl, real durmuşda hem işleýär.
+
+8-nji bölüm. Netije (jemleme)
+
+Soňky jemleme hökmünde aýdanymda:
+	1.	Kantorowiç — optimizasiýanyň atasy
+	2.	Onuň Problem A-si häzirki wagtda hem ulanylýar
+	3.	Python bu ideýany çalt we takyk ýerine ýetirýär
+	4.	Akylly paýlamak → uly peýda
+	5.	Bu pikir:
+	•	logistika
+	•	AI
+	•	biznes
+	•	senagat
+ýaly ýerlerde giňden ulanylýar
+
+
+
+Soňky söz
+
+Şonuň üçin bu proýekt bilen men şuny görkezmek isledim:
+
+1939-njy ýylda tapylan bir pikir
+2026-njy ýylda hem doly güýjünde işleýär.
